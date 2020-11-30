@@ -1,0 +1,63 @@
+.navbar
+  display: flex
+  width: 100%
+  height: $navbar-height
+  padding: 0 17%
+
+  justify-content: flex-start
+  align-items: center
+
+  background-color: rgba(0, 0, 0, .7)
+
+
+
+  .navbar-logo
+    display: flex
+    flex-direction: row
+    flex-grow: 1
+
+    .logo
+      width: 5em
+      height: 5em
+
+      background: url("/assets/logo.png")
+      background-repeat: no-repeat
+      background-size: cover
+
+    .text
+      display: flex
+      flex-direction: column
+
+      justify-content: space-evenly
+      align-items: center
+
+      color: rgba(255, 255, 255, 0.7)
+      margin-left: 1em
+
+      .company-name
+        font-size: 1.6em
+        text-transform: uppercase
+        font-family: $font-logo
+
+      .company-owner
+        font-size: 1.45em
+        margin-top: -0.6em
+        letter-spacing: .07em
+
+
+  .navbar-links
+    display: flex
+
+    ul
+      display: inline-flex
+
+    li
+      padding: 0 1em
+      list-style: none
+
+    a
+      text-decoration: none
+      color: rgba(255, 255, 255, 0.7)
+      font-size: 1.6em
+      &:hover
+        color: white

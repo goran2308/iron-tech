@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarpanch:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceland&display=swap");
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Iceland", cursive;
+}
+
+.landing-page {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/background.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  height: calc(100% - 7em);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 17% 66% 17%;
+      grid-template-columns: 17% 66% 17%;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 7em;
+  padding: 0 17%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar .navbar-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.navbar .navbar-logo .logo {
+  width: 5em;
+  height: 5em;
+  background: url("/assets/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar .navbar-logo .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 1em;
+}
+
+.navbar .navbar-logo .text .company-name {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-family: "Sarpanch", sans-serif;
+}
+
+.navbar .navbar-logo .text .company-owner {
+  font-size: 1.45em;
+  margin-top: -0.6em;
+  letter-spacing: .07em;
+}
+
+.navbar .navbar-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .navbar-links ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.navbar .navbar-links li {
+  padding: 0 1em;
+  list-style: none;
+}
+
+.navbar .navbar-links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.6em;
+}
+
+.navbar .navbar-links a:hover {
+  color: white;
+}
+
+.social-links-left {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-links-left .line {
+  border: 1px solid white;
+  height: 200px;
+}
+
+.social-links-left .icon-links {
+  padding: 1.1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-links-left .icon-links .icon-link {
+  width: 1.4em;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  padding: .1em 0;
+}
+
+.social-links-left .icon-links .icon-link path {
+  fill: white;
+}
+
+.social-links-left .icon-links .instagram {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.social-links-left .icon-links .twitter {
+  width: 3.2em;
+  height: 3.2em;
+  padding: .6em 0;
+}
+
+.our-story-introduction {
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */

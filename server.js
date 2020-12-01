@@ -2,17 +2,18 @@ const express = require('express');
 const app = express();
 
 const cors = require('cors');
+require('dotenv').config();
 const morgan = require('morgan');
 const path = require('path');
 const helmet = require('helmet');
 const bodyParser = require('body-parser');
 const expressSession = require('express-session')({
-  secret: 'secret',
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: false
 });
 
-const port = process.env.PORT || 1337;
+const port = process.env.PORT;
 
 /* MIDDLEWARES */
 app.use(cors());
@@ -90,7 +91,7 @@ app.get('/logout', (req, res) => {
 const mongoose = require('mongoose');
 const passportLocalMongoose = require('passport-local-mongoose');
 
-mongoose.connect('mongodb://localhost/MyDatabase', {
+mongoose.connect(process.env.DB, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });

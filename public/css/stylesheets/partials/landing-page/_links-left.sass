@@ -4,9 +4,8 @@
   flex-direction: column-reverse
   align-items: center
   justify-content: center
-
   .line
-    border: 1px solid white
+    border: 1px solid rgba(255, 255, 255, 0.7)
     height: 200px
 
   .icon-links
@@ -15,18 +14,30 @@
     flex-direction: column-reverse
     align-items: center
 
+    .link
+      &:hover
+        .icon-link
+          path
+            fill: white
+
+
     .icon-link
       width: 1.4em
       transform: rotate(-90deg)
       padding: .1em 0
       path
-        fill: white
+        fill: rgba(255, 255, 255, 0.7)
 
     .instagram
-      width: 2.5em
-      height: 2.5em
+      width: 3.8em
+      height: 3.8em
+      padding: .6em 0
 
     .twitter
       width: 3.2em
       height: 3.2em
       padding: .6em 0
+
+    .facebook
+      width: 3.5em
+      height: 2.2em

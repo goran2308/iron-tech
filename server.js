@@ -28,90 +28,37 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 app.set('view engine', 'ejs');
 
+/* ROUTES */
+const appRoutes = require('./routes/appRoutes');
+const authRoutes = require('./routes/authRoutes');
+app.use('/', appRoutes);
+app.use('/auth', authRoutes);
+
 /* PASSPORT */
 const passport = require('passport');
-app.use(passport.initialize());
-app.use(passport.session());
-
-/* ROUTES */
-const connectEnsureLogin = require('connect-ensure-login');
-
-app.get('/', (req, res, next) => {
-  connectEnsureLogin.ensureLoggedIn(),
-    res.render('pages/index.ejs');
-});
-
-app.post('/login', (req, res, next) => {
-  passport.authenticate('local',
-    (err, user, info) => {
-      if (err) {
-        return next(err);
-      }
-
-      if (!user) {
-        return res.redirect('/login?info=' + info);
-      }
-
-      req.logIn(user, function (err) {
-        if (err) {
-          return next(err);
-        }
-
-        return res.redirect('/private');
-      });
-
-    })(req, res, next);
-});
-
-app.get('/login', (req, res) => {
-  res.render('pages/login', {
-    company: 'Iron-Tech',
-    title: 'Login'
-  });
-});
-
-app.get('/private',
-  connectEnsureLogin.ensureLoggedIn(), (req, res) => {
-    res.render('pages/private.ejs');
-  });
-
-app.get('/user',
-  connectEnsureLogin.ensureLoggedIn(),
-  (req, res) => res.send({
-    user: req.user
-  })
-);
-
-app.get('/logout', (req, res) => {
-  req.logOut();
-  res.redirect('/');
-});
 
 /* MONGOOSE SETUP */
 const mongoose = require('mongoose');
-const passportLocalMongoose = require('passport-local-mongoose');
 
 mongoose.connect(process.env.DB, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
 
-const Schema = mongoose.Schema;
-const UserDetail = new Schema({
-  username: String,
-  password: String
-});
-
-UserDetail.plugin(passportLocalMongoose);
-const UserDetails = mongoose.model('userInfo', UserDetail, 'userInfo');
+/* MODELS */
+const admin = require('./models/user.js');
 
 /* PASSPORT LOCAL AUTHENTICATION */
-passport.use(UserDetails.createStrategy());
+passport.use(admin.createStrategy());
 
-passport.serializeUser(UserDetails.serializeUser());
-passport.deserializeUser(UserDetails.deserializeUser());
+passport.serializeUser(admin.serializeUser());
+passport.deserializeUser(admin.deserializeUser());
 
 /* REGISTER SOME USERS */
+// admin.register({
+//   username: 'goran',
+//   active: false
+// }, 'goran');
 
 /* SERVER STARTING */
 app.listen(port, () => {

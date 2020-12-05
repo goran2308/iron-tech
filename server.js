@@ -15,10 +15,15 @@ const expressSession = require('express-session')({
 
 const port = process.env.PORT;
 
+
 /* MIDDLEWARES */
 app.use(cors());
 app.use(morgan('dev'));
-app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+  })
+);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
@@ -28,14 +33,17 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 app.set('view engine', 'ejs');
 
+
 /* ROUTES */
 const appRoutes = require('./routes/appRoutes');
 const authRoutes = require('./routes/authRoutes');
 app.use('/', appRoutes);
 app.use('/auth', authRoutes);
 
+
 /* PASSPORT */
 const passport = require('passport');
+
 
 /* MONGOOSE SETUP */
 const mongoose = require('mongoose');
@@ -45,20 +53,23 @@ mongoose.connect(process.env.DB, {
   useUnifiedTopology: true
 });
 
+
 /* MODELS */
 const admin = require('./models/user.js');
 
+
 /* PASSPORT LOCAL AUTHENTICATION */
 passport.use(admin.createStrategy());
-
 passport.serializeUser(admin.serializeUser());
 passport.deserializeUser(admin.deserializeUser());
+
 
 /* REGISTER SOME USERS */
 // admin.register({
 //   username: 'goran',
 //   active: false
 // }, 'goran');
+
 
 /* SERVER STARTING */
 app.listen(port, () => {

@@ -7,6 +7,10 @@ const Message = new Schema({
     type: String,
     required: true
   },
+  contact: {
+    type: String,
+    required: true
+  },
   service: {
     type: String,
     enum: ['Welding', 'Woodwork', 'Mechanic'],

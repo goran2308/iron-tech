@@ -2,14 +2,11 @@ const express = require('express');
 const router = express.Router();
 const connectEnsureLogin = require('connect-ensure-login');
 const message = require('../models/message');
-//const passport = require('passport');
-
-//router.use(passport.initialize());
-//router.use(passport.session());
 
 router.post('/', (req, res, next) => {
   const myMessage = new message({
     customer: req.body.customer,
+    contact: req.body.contact,
     service: req.body.service,
     message: req.body.message
   });

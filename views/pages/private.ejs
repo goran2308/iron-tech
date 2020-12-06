@@ -9,16 +9,63 @@
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
 
-  <title> Private </title>
+  <title>Admin dashboard</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <div class="message-box">
-    <h2>This is a private area</h2>
-    <h3>Only you can see it</h3>
-  </div> </br>
-  <a href="/auth/logout">Logout</a>
+
+  <div class="admin-container">
+
+    <div class="left-side">
+      <div class="greeting-clock-date">
+        <h1>Gteeting username</h1>
+        <h4>14:55</h4>
+        <h4>01/12/2020</h4>
+      </div>
+
+      <div class="add-service">
+        <form class="add-service-form" action="" method="post">
+          <label for="service-name">Service name:</label>
+          <input type="text" name="service-name">
+          <label for="service-info">Description</label>
+          <textarea name="service-info" cols="30" rows="10"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <div class="message-board">
+        <div class="message-card">
+          <h2>Title</h2>
+          <h3>Customer name</h3>
+          <h3>Phone number</h3>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur,
+            architecto ex iusto similique laboriosam modi soluta saepe libero, dolorum blanditiis,
+            atque quo pariatur a facere ducimus. Voluptatibus, optio et?</h4>
+          <button class="delete-btn">Delete</button>
+        </div>
+        <div class="message-card">
+          <h2>Title</h2>
+          <h3>Customer name</h3>
+          <h3>Phone number</h3>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur,
+            architecto ex iusto similique laboriosam modi soluta saepe libero, dolorum blanditiis,
+            atque quo pariatur a facere ducimus. Voluptatibus, optio et?</h4>
+          <button class="delete-btn">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-side">
+      <div class="logout">
+        <a href="/auth/logout">Logout</a>
+      </div>
+    </div>
+
+  </div>
+
 </body>
 
 </html>

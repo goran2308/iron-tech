@@ -37,8 +37,10 @@ app.set('view engine', 'ejs');
 /* ROUTES */
 const appRoutes = require('./routes/appRoutes');
 const authRoutes = require('./routes/authRoutes');
+const apiRoutes = require('./routes/apiRoutes');
 app.use('/', appRoutes);
 app.use('/auth', authRoutes);
+app.use('/auth/api', apiRoutes);
 
 
 /* PASSPORT */
@@ -47,10 +49,12 @@ const passport = require('passport');
 
 /* MONGOOSE SETUP */
 const mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 
 mongoose.connect(process.env.DB, {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useCreateIndex: true
 });
 
 

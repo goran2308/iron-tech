@@ -1,14 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const connectEnsureLogin = require('connect-ensure-login');
 const passport = require('passport');
 
 router.use(passport.initialize());
 router.use(passport.session());
 
 router.get('/', (req, res, next) => {
-  connectEnsureLogin.ensureLoggedIn(),
-    res.render('pages/index.ejs');
+  res.render('pages/index.ejs');
 });
 
 router.get('/login', (req, res) => {

@@ -1,16 +1,18 @@
 .our-story-container
-  height: 100%
-  display: flex
-  align-items: center
-  justify-content: center
-  margin-left: 34%
-  flex-direction: column
+  height: calc(100vh - 7em)
+  width: 50%
+  display: grid
+  grid-template-columns: 1fr 2fr
 
 .our-story-text
-  width: 100%
-  text-align: center
-  color: rgba(255, 255, 255, 0.7)
-  font-size: 1.7em
+  display: flex
+  flex-direction: column
+  padding: 2em
+  align-items: center
+  justify-content: center
+  p
+    font-size: 1.5em
+    color: rgba(255, 255, 255, 0.7)
 
 .quote-btn
   text-decoration: none
@@ -22,3 +24,15 @@
   border-radius: 5px
   &:hover
     background-color: lighten(rgb(54, 157, 252), 5%)
+
+.arrow-down
+  position: absolute
+  bottom: 10%
+  left: 29%
+  transform: translate(50%, 50%)
+  svg
+    width: 70px
+    height: 70px
+    fill: rgba(255, 255, 255, 0.2)
+    &:hover
+      fill: rgba(255, 255, 255, 0.7)

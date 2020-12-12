@@ -37,24 +37,13 @@
 
     <div class="right-side">
       <div class="message-board">
-        <div class="message-card">
-          <h2>Title</h2>
-          <h3>Customer name</h3>
-          <h3>Phone number</h3>
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur,
-            architecto ex iusto similique laboriosam modi soluta saepe libero, dolorum blanditiis,
-            atque quo pariatur a facere ducimus. Voluptatibus, optio et?</h4>
-          <button class="delete-btn">Delete</button>
-        </div>
-        <div class="message-card">
-          <h2>Title</h2>
-          <h3>Customer name</h3>
-          <h3>Phone number</h3>
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur,
-            architecto ex iusto similique laboriosam modi soluta saepe libero, dolorum blanditiis,
-            atque quo pariatur a facere ducimus. Voluptatibus, optio et?</h4>
-          <button class="delete-btn">Delete</button>
-        </div>
+        <% for(let i=0; i<messages.length; i++) { %>
+          Name: <%=messages[i].customer %> <br>
+            Date: <%=messages[i].date.toDateString() %><br>
+              Phone: <%=messages[i].contact %> <br>
+                Service: <%=messages[i].service %><br>
+                  Message: <%=messages[i].message %><br><br><br>
+                    <% } %>
       </div>
     </div>
 

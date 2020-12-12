@@ -1,7 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const connectEnsureLogin = require('connect-ensure-login');
-const message = require('../models/message');
 
 router.post('/', (req, res, next) => {
   const myMessage = new message({
@@ -18,13 +16,7 @@ router.post('/', (req, res, next) => {
       message: err.message
     });
   });
-
+  res.redirect('/'); /* Build success page form submitted */
 });
-
-router.get('/', connectEnsureLogin.ensureLoggedIn(),
-  (req, res, next) => {
-    res.render('pages/api.ejs');
-    /* Need to fetch the messages */
-  });
 
 module.exports = router

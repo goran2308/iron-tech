@@ -31,7 +31,6 @@ router.post('/login', (req, res, next) => {
         if (err) {
           return next(err);
         }
-
         return res.redirect('/auth/private');
       });
 

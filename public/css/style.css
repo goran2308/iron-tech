@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sarpanch:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Iceland&display=swap");
-@font-face {
-  font-family: Prompt;
-  src: url("../assets/fonts/Prompt-Regular.ttf");
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -16,8 +12,52 @@
   outline: none;
 }
 
+html {
+  font-size: 112.5%;
+}
+
 body {
-  font-family: "Iceland", cursive;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small, .text_small {
+  font-size: 0.8rem;
 }
 
 .landing-page {
@@ -26,7 +66,7 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/background.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/background.png");
   background-size: contain;
-  background-position: center right;
+  background-position: 115% center;
   background-repeat: no-repeat;
   background-color: black;
 }
@@ -90,26 +130,23 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: rgba(255, 255, 255, 0.7);
   margin-left: 1em;
 }
 
 .navbar .navbar-logo .text .company-name {
-  font-size: 1.6em;
   text-transform: uppercase;
   font-family: "Sarpanch", sans-serif;
+  font-size: 1.5em;
 }
 
 .navbar .navbar-logo .text .company-owner {
-  font-size: 1.45em;
-  margin-top: -0.6em;
-  letter-spacing: .07em;
+  margin-top: -0.7em;
+  font-family: "Iceland", cursive;
+  font-size: 1.25em;
 }
 
 .navbar .navbar-links {
@@ -133,13 +170,14 @@ main {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.8em;
+  font-family: "Iceland", cursive;
 }
 
 .navbar .navbar-links a:hover {
   color: white;
 }
 
-.social-links-right {
+.social-links-left {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,13 +195,13 @@ main {
   margin-right: 34%;
 }
 
-.social-links-right .line {
-  border: 1px solid rgba(255, 255, 255, 0.7);
+.social-links-left .line {
+  border: 1px solid rgba(255, 255, 255, 0.3);
   height: 200px;
   margin-top: 1em;
 }
 
-.social-links-right .icon-links {
+.social-links-left .icon-links {
   padding: 1.1em 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,34 +215,34 @@ main {
           align-items: center;
 }
 
-.social-links-right .icon-links .link:hover .icon-link path {
-  fill: white;
+.social-links-left .icon-links .link:hover .icon-link path {
+  fill: rgba(255, 255, 255, 0.7);
 }
 
-.social-links-right .icon-links .icon-link {
+.social-links-left .icon-links .icon-link {
   width: 1.4em;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   padding: .1em 0;
 }
 
-.social-links-right .icon-links .icon-link path {
-  fill: rgba(255, 255, 255, 0.7);
+.social-links-left .icon-links .icon-link path {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
-.social-links-right .icon-links .instagram {
+.social-links-left .icon-links .instagram {
   width: 3.8em;
   height: 3.8em;
   padding: .6em 0;
 }
 
-.social-links-right .icon-links .twitter {
+.social-links-left .icon-links .twitter {
   width: 3.2em;
   height: 3.2em;
   padding: .6em 0;
 }
 
-.social-links-right .icon-links .facebook {
+.social-links-left .icon-links .facebook {
   width: 3.5em;
   height: 2.2em;
 }
@@ -219,6 +257,7 @@ main {
 }
 
 .our-story-text {
+  color: rgba(255, 255, 255, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,50 +266,25 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.our-story-text p {
-  font-family: "Prompt", sans-serif;
-  font-size: 1.4em;
-  color: rgba(255, 255, 255, 0.7);
-}
-
 .quote-btn {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
+  color: white;
   background-color: #369dfc;
-  font-size: 1.5em;
-  padding: .4em 1.2em;
-  margin-top: 1.5em;
+  padding: .325em 2em;
+  margin-top: 3em;
   border-radius: 5px;
 }
 
 .quote-btn:hover {
   background-color: #4fa9fc;
-}
-
-.arrow-down {
-  position: absolute;
-  bottom: 10%;
-  left: 29%;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
-}
-
-.arrow-down svg {
-  width: 70px;
-  height: 70px;
-  fill: rgba(255, 255, 255, 0.2);
-}
-
-.arrow-down svg:hover {
-  fill: rgba(255, 255, 255, 0.7);
 }
 
 .admin-container {

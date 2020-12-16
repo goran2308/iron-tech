@@ -3,13 +3,9 @@
   width: 100%
   height: $navbar-height
   padding: 0 17%
-
   justify-content: flex-start
   align-items: center
-
   background-color: rgba(255, 255, 255, .1)
-
-
 
   .navbar-logo
     display: flex
@@ -19,7 +15,6 @@
     .logo
       width: 5em
       height: 5em
-
       background: url("/assets/logo.png")
       background-repeat: no-repeat
       background-size: cover
@@ -27,23 +22,19 @@
     .text
       display: flex
       flex-direction: column
-
-      justify-content: space-evenly
-      align-items: center
-
+      justify-content: center
       color: rgba(255, 255, 255, 0.7)
       margin-left: 1em
 
       .company-name
-        font-size: 1.6em
         text-transform: uppercase
-        font-family: $font-logo
+        font-family: $logo-font
+        font-size: 1.5em
 
       .company-owner
-        font-size: 1.45em
-        margin-top: -0.6em
-        letter-spacing: .07em
-
+        margin-top: -0.7em
+        font-family: $nav-font
+        font-size: 1.25em
 
   .navbar-links
     display: flex
@@ -59,5 +50,6 @@
       text-decoration: none
       color: rgba(255, 255, 255, 0.7)
       font-size: 1.8em
+      font-family: $nav-font
       &:hover
         color: white

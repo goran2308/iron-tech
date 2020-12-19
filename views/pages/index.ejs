@@ -15,6 +15,10 @@
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
 
+  <!-- Swiper files -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -110,7 +114,7 @@
   <section class="services">
     <div class="service-card metal-card">
       <img src="/assets/card1.jpg" alt="">
-      <h2>Metal work</h2>
+      <h3>Metal work</h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
         voluptatibus voluptatem vero magni debitis, aut expedita rerum vitae amet nisi iure
         molestias doloremque possimus, asperiores obcaecati nihil eveniet aperiam quaerat!</p>
@@ -118,7 +122,7 @@
     </div>
     <div class="service-card wood-card">
       <img src="/assets/card2.jpg" alt="">
-      <h2>Metal/Wood work</h2>
+      <h3>Metal/Wood work</h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis et
         veniam, temporibus officia incidunt at! Aut ullam, adipisci atque, repellendus eveniet
         expedita modi, doloremque impedit nam assumenda enim non voluptatibus?</p>
@@ -126,7 +130,7 @@
     </div>
     <div class="service-card mechanics-card">
       <img src="/assets/card1.jpg" alt="">
-      <h2>Mechanics</h2>
+      <h3>Mechanics</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi et omnis
         laborum ab, inventore, neque placeat quisquam repellat pariatur ea quaerat dolore, quos
         distinctio dignissimos fugiat aut sapiente quod doloremque!</p>
@@ -134,12 +138,58 @@
     </div>
   </section>
 
+  <section class="customer-reviews">
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper main-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="review">
+            <img src="" alt="">
+            <div class="customer-name">Goran</div>
+            <div class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              tenetur error doloremque numquam repudiandae, reiciendis quia consectetur illum fugit,
+              a vel quae ipsa! Dolorum, id. Obcaecati aperiam aspernatur atque neque.</div>
+            <div class="rating-stars"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review">
+            <img src="" alt="">
+            <div class="customer-name">Emilia</div>
+            <div class="review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea id
+              veritatis ipsa debitis distinctio iure quas sapiente? Ab eius architecto commodi
+              incidunt aliquam temporibus suscipit? Vel magnam dolore placeat maiores?</div>
+            <div class="rating-stars"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review">
+            <img src="" alt="">
+            <div class="customer-name">Zoe</div>
+            <div class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              laborum possimus ipsam saepe a exercitationem laudantium odio nulla necessitatibus
+              veritatis, debitis vero suscipit quidem voluptates aliquam facere, quia illum
+              voluptas?</div>
+            <div class="rating-stars"></div>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+  </section>
+
   <section>
-
     <h1>Contact us</h1>
-
     <form action="/auth/api" method="post">
-
       <label for="customer">Your name:</label>
       <input type="text" name="customer"> </br>
       <label for="contact">Phone number:</label>
@@ -151,13 +201,14 @@
         <option name="Mechanic" value="Mechanic">Mechanic</option>
       </select> </br>
       <textarea name="message" cols="30" rows="10" placeholder="Leave your message..."></textarea>
-
       <button type="submit">Send</button>
     </form>
-
   </section>
 
-
+  <!-- Swiper js files -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/swiper.js"></script>
 </body>
 
 </html>

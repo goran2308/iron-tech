@@ -18,10 +18,10 @@ const mySwiper = new Swiper('.swiper-container', {
     delay: 5000,
   },
 
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
+  effect: 'flip',
+  flipEffect: {
+    slideShadows: false,
+  }
 
   // And if we need scrollbar
   // scrollbar: {

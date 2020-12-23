@@ -434,8 +434,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
-  padding: 5em 7em;
+  width: 40%;
+  padding: 5em 0;
 }
 
 .main-wrapper {
@@ -459,10 +459,23 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 2em;
 }
 
 .rating-stars i {
-  padding: .125em;
+  padding: .2em;
+  font-size: 24px;
+}
+
+.review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
 }
 
 .review img {
@@ -472,6 +485,18 @@ main {
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: -2em;
+}
+
+.review h4 {
+  font-weight: 500;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 1.5em;
 }
 
 .img1 {

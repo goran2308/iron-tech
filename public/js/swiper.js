@@ -9,5 +9,8 @@ const mySwiper = new Swiper('.swiper-container', {
     disableOnInteraction: false
   },
 
-
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
 });

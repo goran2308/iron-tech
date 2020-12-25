@@ -63,8 +63,8 @@ small, .text_small {
 .landing-page {
   width: 100%;
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/background.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/background.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/background.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/background.png");
   background-size: contain;
   background-position: 115% center;
   background-repeat: no-repeat;
@@ -98,7 +98,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .navbar .navbar-logo {
@@ -276,6 +276,7 @@ main {
 
 .our-story-text h1 {
   font-weight: 500;
+  font-size: 4em;
 }
 
 .quote-btn {
@@ -283,7 +284,7 @@ main {
   color: white;
   background-color: #369dfc;
   padding: .325em 2em;
-  margin-top: 3em;
+  margin-top: 2em;
   border-radius: 5px;
 }
 
@@ -435,7 +436,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   width: 45%;
-  padding: 5em 0;
+  padding: 2em 0;
 }
 
 .swiper-wrapper {

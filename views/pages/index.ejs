@@ -201,22 +201,45 @@
     </div>
   </section>
 
-  <section>
-    <h1>Contact us</h1>
-    <form action="/auth/api" method="post">
-      <label for="customer">Your name:</label>
-      <input type="text" name="customer"> </br>
-      <label for="contact">Phone number:</label>
-      <input type="text" name="contact"> </br>
-      <label for="services">Choose a service:</label>
-      <select name="service" type="text">
-        <option name="Welding" value="Welding">Welding</option>
-        <option name="Woodwork" value="Woodwork">Woodwork</option>
-        <option name="Mechanic" value="Mechanic">Mechanic</option>
-      </select> </br>
-      <textarea name="message" cols="30" rows="10" placeholder="Leave your message..."></textarea>
-      <button type="submit">Send</button>
-    </form>
+  <section class="footer">
+    <div class="mapouter">
+      <div class="gmap_canvas"><iframe width="450" height="300" id="gmap_canvas"
+          src="https://maps.google.com/maps?q=iron-tech%20wola&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+          href="https://www.embedgooglemap.net">embed google map</a></div>
+      <style>
+        .mapouter {
+          position: relative;
+          text-align: right;
+          height: 300px;
+          width: 450px;
+        }
+
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          height: 300px;
+          width: 450px;
+        }
+      </style>
+    </div>
+    <div class="contact">
+      <h1>Contact us</h1>
+      <form action="/auth/api" method="post">
+        <label for="customer">Your name:</label>
+        <input type="text" name="customer"> </br>
+        <label for="contact">Phone number:</label>
+        <input type="text" name="contact"> </br>
+        <label for="services">Choose a service:</label>
+        <select name="service" type="text">
+          <option name="Welding" value="Welding">Welding</option>
+          <option name="Woodwork" value="Woodwork">Woodwork</option>
+          <option name="Mechanic" value="Mechanic">Mechanic</option>
+        </select> </br>
+        <textarea name="message" cols="30" rows="10" placeholder="Leave your message..."></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </section>
 
   <!-- Swiper js files -->

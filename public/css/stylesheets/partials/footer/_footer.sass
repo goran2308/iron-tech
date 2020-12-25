@@ -1,0 +1,41 @@
+.footer
+  height: fit-content
+  display: grid
+  grid-template-rows: 6fr 1fr
+  grid-template-columns: 1fr 1fr 1fr
+  grid-template-areas: "map contact message" "map contact message" "map contact message" "map contact message" "map contact message" "map contact message" "copy copy copy" 
+  padding: 5em 5em 0 5em
+  justify-items: center
+  a
+    display: flex
+    align-items: center
+    width: max-content
+    text-decoration: none
+    color: black
+    margin-bottom: .25em
+    &:hover
+      color: #369dfc
+  svg, i
+    width: 1em
+    color: #369dfc
+    margin-right: 1em
+    path
+      fill: #369dfc
+
+.mapouter, .contact, .message
+  margin-bottom: 5em
+
+.mapouter
+  grid-area: map
+
+.contact
+  grid-area: contact
+
+.message
+  grid-area: message
+
+
+.copyright
+  grid-area: copy
+  justify-self: center
+  margin-bottom: .5em

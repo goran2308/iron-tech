@@ -1,26 +1,26 @@
 .our-story-container
-  height: calc(100vh - 7em)
+  height: calc(100vh - #{$nav-height-lg})
   width: 50%
   display: grid
   grid-template-columns: 1fr 2fr
 
 .our-story-text
-  color: rgba(255, 255, 255, .7)
+  color: $white-alpha-7
   display: flex
   flex-direction: column
   padding: 2em
   align-items: flex-start
   justify-content: center
   h1
-    font-weight: 500
+    font-weight: $font-weight-medium
     font-size: 4em
 
 .quote-btn
   text-decoration: none
-  color: rgba(255, 255, 255, 1)
-  background-color: rgb(54, 157, 252)
+  color: $white
+  background-color: $main-blue
   padding: .325em 2em
   margin-top: 2em
   border-radius: 5px
   &:hover
-    background-color: lighten(rgb(54, 157, 252), 5%)
+    background-color: lighten($main-blue, 5%)

@@ -4,7 +4,7 @@
   grid-template-rows: 6fr 1fr
   grid-template-columns: 1fr 1fr 1fr
   grid-template-areas: "map contact message" "map contact message" "map contact message" "map contact message" "map contact message" "map contact message" "copy copy copy" 
-  padding: 5em 5em 0 5em
+  padding: 5em 8em 0 8em
   justify-items: center
   a
     display: flex
@@ -27,15 +27,19 @@
 
 .mapouter
   grid-area: map
+  h1
+    margin-bottom: 1em
 
 .contact
   grid-area: contact
 
 .message
   grid-area: message
+  h1
+    margin-bottom: 1em
 
 
 .copyright
   grid-area: copy
   justify-self: center
-  margin-bottom: .5em
+  margin-bottom: 1em

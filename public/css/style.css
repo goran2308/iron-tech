@@ -1,3 +1,6 @@
+/* Typography */
+/* Typography weight */
+/* Colors */
 @import url("https://fonts.googleapis.com/css2?family=Sarpanch:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Iceland&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
@@ -21,7 +24,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   line-height: 1.75;
-  color: #000000;
+  color: black;
 }
 
 p {
@@ -536,7 +539,7 @@ main {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas: "map contact message" "map contact message" "map contact message" "map contact message" "map contact message" "map contact message" "copy copy copy";
-  padding: 5em 5em 0 5em;
+  padding: 5em 8em 0 8em;
   justify-items: center;
 }
 
@@ -580,6 +583,10 @@ main {
   grid-area: map;
 }
 
+.mapouter h1 {
+  margin-bottom: 1em;
+}
+
 .contact {
   -ms-grid-row: 1;
   -ms-grid-row-span: 6;
@@ -594,6 +601,10 @@ main {
   grid-area: message;
 }
 
+.message h1 {
+  margin-bottom: 1em;
+}
+
 .copyright {
   -ms-grid-row: 7;
   -ms-grid-column: 1;
@@ -601,7 +612,7 @@ main {
   grid-area: copy;
   -ms-grid-column-align: center;
       justify-self: center;
-  margin-bottom: .5em;
+  margin-bottom: 1em;
 }
 
 .message-form {
@@ -668,5 +679,52 @@ button {
 button:hover {
   background-color: #4fa9fc;
   border: 2px solid #4fa9fc;
+}
+
+@media only screen and (max-width: 90em) {
+  .landing-page {
+    background-position: 220% center;
+  }
+  .navbar {
+    height: 6em;
+    padding: 0 15%;
+  }
+  .logo {
+    width: 4em !important;
+    height: 4em !important;
+  }
+  .company-name {
+    font-size: 1.3em;
+  }
+  .company-owner {
+    font-size: 1.15em;
+  }
+  .navbar-links a {
+    font-size: 1.5em;
+  }
+  .content {
+    height: calc(100vh - 6em);
+  }
+  .our-story-container {
+    height: calc(100vh - 6em);
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    width: 45%;
+  }
+  .our-story-text {
+    padding: 2em 0;
+  }
+  .our-story-text h1 {
+    font-size: 3.5em;
+  }
+  .our-story-text p {
+    font-size: .9em;
+  }
+  .social-links-left {
+    margin-right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

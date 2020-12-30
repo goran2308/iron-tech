@@ -68,7 +68,7 @@ small, .text_small {
   min-height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/background.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/background.png");
-  background-size: contain;
+  background-size: cover;
   background-position: 115% center;
   background-repeat: no-repeat;
   background-color: black;
@@ -682,8 +682,11 @@ button:hover {
 }
 
 @media only screen and (max-width: 90em) {
+  html {
+    font-size: 100%;
+  }
   .landing-page {
-    background-position: 220% center;
+    background-position: 200px center;
   }
   .navbar {
     height: 6em;
@@ -693,38 +696,52 @@ button:hover {
     width: 4em !important;
     height: 4em !important;
   }
-  .company-name {
-    font-size: 1.3em;
-  }
-  .company-owner {
-    font-size: 1.15em;
-  }
-  .navbar-links a {
-    font-size: 1.5em;
-  }
   .content {
     height: calc(100vh - 6em);
   }
   .our-story-container {
     height: calc(100vh - 6em);
-    -ms-grid-columns: 1fr 2fr;
-        grid-template-columns: 1fr 2fr;
-    width: 45%;
+    min-width: 100%;
+    -ms-grid-columns: 1fr 6fr;
+        grid-template-columns: 1fr 6fr;
   }
   .our-story-text {
-    padding: 2em 0;
-  }
-  .our-story-text h1 {
-    font-size: 3.5em;
-  }
-  .our-story-text p {
-    font-size: .9em;
+    width: 50%;
   }
   .social-links-left {
     margin-right: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .services {
+    padding: 10em 8.9em;
+    -webkit-column-gap: 3em;
+            column-gap: 3em;
+  }
+  .review img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media only screen and (max-width: 85.375em) {
+  html {
+    font-size: 100%;
+  }
+  .services {
+    padding: 10em 7.6em;
+    -webkit-column-gap: 2.5em;
+            column-gap: 2.5em;
+  }
+  .footer {
+    padding: 5em 5em 0 5em;
+  }
+}
+
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -741,7 +741,61 @@ button:hover {
 
 @media only screen and (max-width: 68.75em) {
   html {
-    font-size: 100%;
+    font-size: 85%;
+  }
+  .services {
+    padding: 8em 5.8em;
+    -webkit-column-gap: 2em;
+            column-gap: 2em;
+  }
+  .swiper-container {
+    width: 55%;
+  }
+  .review img {
+    width: 100px;
+    height: 100px;
+  }
+  .footer {
+    -ms-grid-rows: 6fr 6fr 6fr 1fr !important;
+        grid-template-rows: 6fr 6fr 6fr 1fr !important;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+        grid-template-areas: "map" "contact" "message" "copy";
+  }
+  .mapouter, .contact, .message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .mapouter, .contact, .message, .footer, .copyright {
+    margin: 0;
+    padding: 0;
+  }
+  .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 3em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 100%;
+    padding: 2em 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

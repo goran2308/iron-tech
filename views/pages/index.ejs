@@ -4,10 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iron - Tech | Jakub Kisala</title>
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/355b890a2e.js" crossorigin="anonymous" defer></script>
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -17,6 +13,11 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
+
+  <title>Iron - Tech | Jakub Kisala</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/355b890a2e.js" crossorigin="anonymous" defer></script>
 
   <!-- Swiper files -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -202,10 +203,12 @@
       <h1>Address</h1>
       <p>Wola Zgłobieńska 94, 36-046, <br>
         Rzeszów, Poland</p>
-      <div class="gmap_canvas"><iframe width="350" height="200" id="gmap_canvas"
+      <div class="gmap_canvas">
+        <iframe width="350" height="200" id="gmap_canvas"
           src="https://maps.google.com/maps?q=iron-tech%20wola&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-          href="https://youtube-embed-code.com">youtube embed code</a></div>
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        </iframe>
+      </div>
       <style>
         .mapouter {
           position: relative;
@@ -256,7 +259,6 @@
       </div>
     </div>
 
-    </div>
     <div class="message">
       <h1>Message</h1>
       <form class="message-form" action="/auth/api" method="post">
@@ -274,7 +276,12 @@
     </div>
 
     <div class="copyright">
-      <small>© 2020 Goran Solev</small>
+      <small>©
+        <script>
+          const dt = new Date();
+          document.write(dt.getFullYear());
+        </script> Goran Solev
+      </small>
     </div>
   </section>
 

@@ -52,6 +52,41 @@
 
 @media only screen and ( max-width: 68.75em) //1100px
   html
-    font-size: 100%
+    font-size: 85%
 
-  
+  .services
+    padding: 8em 5.8em
+    column-gap: 2em
+
+  .swiper-container
+    width: 55%
+
+  .review
+    img
+      width: 100px
+      height: 100px
+
+  .footer
+    grid-template-rows: 6fr 6fr 6fr 1fr !important
+    grid-template-columns: 1fr !important
+    grid-template-areas: "map" "contact" "message" "copy"
+
+  .mapouter, .contact, .message
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    min-width: 100%
+    min-height: 100%
+
+  .mapouter, .contact, .message, .footer, .copyright
+    margin: 0
+    padding: 0
+
+  .copyright
+    display: flex
+    margin-top: 3em
+    justify-content: center
+    align-items: center
+    min-width: 100%
+    padding: 2em 0

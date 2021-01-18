@@ -12,6 +12,7 @@ const expressSession = require('express-session')({
   resave: false,
   saveUninitialized: false
 });
+const methodOverride = require('method-override');
 
 const port = process.env.PORT;
 
@@ -30,6 +31,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(expressSession);
 app.use(express.static(path.join(__dirname, '/public')));
+app.use(methodOverride('_method'));
 
 app.set('view engine', 'ejs');
 

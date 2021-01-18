@@ -20,4 +20,14 @@ router.post('/', (req, res, next) => {
   res.redirect('/'); /* Build success page form submitted */
 });
 
+router.delete('/:id', (req, res, next) => {
+  const id = req.params.id;
+  message.findByIdAndRemove(id, (err, message) => {
+    if (err) return res.status(500).json({
+      'message': 'Error deleting the message!'
+    });
+  });
+  res.redirect('/auth/private');
+});
+
 module.exports = router

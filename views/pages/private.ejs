@@ -19,7 +19,8 @@
 
     <div class="left-side">
       <div class="greeting-clock-date">
-        <h1>Gteeting username</h1><br>
+        <h1>Greetings, <%= user.toUpperCase() %>
+        </h1><br>
         <h4 id="time"></h4>
       </div>
 
@@ -41,7 +42,10 @@
             Date: <%=messages[i].date.toDateString() %><br>
               Phone: <%=messages[i].contact %> <br>
                 Service: <%=messages[i].service %><br>
-                  Message: <%=messages[i].message %><br><br><br>
+                  Message: <%=messages[i].message %><br>
+                    <form action="/auth/api/<%=messages[i].id%>?_method=DELETE" method="POST">
+                      <button type="submit">Delete</button> <br><br><br>
+                    </form>
                     <% } %>
       </div>
     </div>

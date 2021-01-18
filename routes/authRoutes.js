@@ -15,7 +15,8 @@ router.get('/private',
         res.send(err);
       } else {
         res.render('../views/pages/private.ejs', {
-          messages: messages
+          messages: messages,
+          user: req.user.username
         });
       }
     });

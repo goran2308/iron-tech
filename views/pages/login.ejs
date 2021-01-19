@@ -7,25 +7,29 @@
 <meta name="theme-color" content="#ffffff">
 
 <!-- <link rel="manifest" href="/application/favicons/site.webmanifest" crossorigin="use-credentials"> -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/login.css">
 
 
-<h1>
-  <%= company %>
-</h1>
-<h2>
-  <%= title %>
-</h2>
+<div class="container">
+  <h1>
+    <%= company %>
+  </h1>
+  <h2>
+    <%= title %>
+  </h2>
 
-<form action="/login" method="post">
-  <input type="text" name="username" placeholder="Username"> <br>
-  <input type="password" name="password" placeholder="Password" required> <br>
+  <form action="/login" method="post">
+    <input type="text" name="username" placeholder="Username"> <br>
+    <input type="password" name="password" placeholder="Password" required> <br>
 
-  <button type="submit">Submit</button> <br>
+    <button type="submit">Submit</button> <br>
 
-  <label id="error-message"></label>
-</form>
+    <label id="error-message"></label>
+  </form>
 
-<a href="/">Back home</a>
+  <a href="/">Back home</a>
+</div>
 
 
 <script src="/js/login.js"></script>

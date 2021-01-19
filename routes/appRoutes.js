@@ -16,6 +16,7 @@ router.get('/login', (req, res) => {
   });
 });
 
+/* USER AUTHENTICATION TO THE DASHBOARD */
 router.post('/login', (req, res, next) => {
   passport.authenticate('local',
     (err, user, info) => {

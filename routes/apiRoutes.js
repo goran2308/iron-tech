@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const message = require('../models/message');
 
+/* POST AND SAVE THE MESSAGE */
 router.post('/', (req, res, next) => {
   const myMessage = new message({
     customer: req.body.customer,
@@ -20,6 +21,7 @@ router.post('/', (req, res, next) => {
   res.redirect('/'); /* Build success page form submitted */
 });
 
+/* DELETE THE MESSAGE */
 router.delete('/:id', (req, res, next) => {
   const id = req.params.id;
   message.findByIdAndRemove(id, (err, message) => {

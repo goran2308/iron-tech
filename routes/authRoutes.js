@@ -22,6 +22,7 @@ router.get('/private',
     });
   });
 
+/* SEE THE ADMIN USERS */
 router.get('/user',
   connectEnsureLogin.ensureLoggedIn(),
   (req, res) => res.send({
@@ -29,6 +30,7 @@ router.get('/user',
   })
 );
 
+/* LOGOUT FROM THE DASHBOARD */
 router.get('/logout', (req, res) => {
   req.logOut();
   res.redirect('/');

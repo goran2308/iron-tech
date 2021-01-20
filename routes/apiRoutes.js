@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const message = require('../models/message');
+const alert = require('alert');
 
 /* POST AND SAVE THE MESSAGE */
 router.post('/', (req, res, next) => {
@@ -18,7 +19,8 @@ router.post('/', (req, res, next) => {
       message: err.message
     });
   });
-  res.redirect('/'); /* Build success page form submitted */
+  alert('Message sent!');
+  res.redirect('/');
 });
 
 /* DELETE THE MESSAGE */

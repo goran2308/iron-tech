@@ -45,10 +45,6 @@ app.use('/auth', authRoutes);
 app.use('/auth/api', apiRoutes);
 
 
-/* PASSPORT */
-const passport = require('passport');
-
-
 /* MONGOOSE SETUP */
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
@@ -60,17 +56,16 @@ mongoose.connect(process.env.DB, {
 });
 
 
-/* MODELS */
+/* REGISTER USERS */
+/* PASSPORT */
+const passport = require('passport');
+
 const admin = require('./models/user.js');
 
-
-/* PASSPORT LOCAL AUTHENTICATION */
 passport.use(admin.createStrategy());
 passport.serializeUser(admin.serializeUser());
 passport.deserializeUser(admin.deserializeUser());
 
-
-/* REGISTER SOME USERS */
 // admin.register({
 //   username: 'goran',
 //   active: false

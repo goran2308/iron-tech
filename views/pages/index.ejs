@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -14,31 +16,32 @@
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
 
+
   <title>Iron - Tech | Jakub Kisala</title>
+
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/355b890a2e.js" crossorigin="anonymous" defer></script>
+
 
   <!-- Swiper files -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+
+
 <body>
 
+  <!-- Landing page -->
+  <section class="landing-page" id="home">
 
-
-  <section class="landing-page">
-    <!-- Landing page -->
-
-
-
+    <!-- Navbar -->
     <nav class="navbar" id="navbar">
-      <!-- Navbar -->
-
       <div class="navbar-logo">
         <div class="logo"></div>
 
@@ -49,7 +52,7 @@
       </div>
       <div class="navbar-links">
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#reviews">Reviews</a></li>
           <li><a href="#contact">Contact Us</a></li>
@@ -58,15 +61,17 @@
     </nav>
 
 
-
     <main>
+
+      <!-- Content -->
       <div class="content">
-        <!-- Content -->
         <div class="our-story-container">
+
+          <!-- Social links -->
           <div class="social-links-left">
             <div class="icon-links">
               <div class="line"></div>
-              <a href="" class="link">
+              <a href="" class="link" target="_blank">
                 <svg class="icon-link facebook" aria-hidden="true" focusable="false"
                   data-prefix="fab" data-icon="facebook-f"
                   class="svg-inline--fa fa-facebook-f fa-w-10" role="img"
@@ -76,7 +81,7 @@
                   </path>
                 </svg>
               </a>
-              <a href="" class="link">
+              <a href="https://www.instagram.com/irontech2/" class="link" target="_blank">
                 <svg class="icon-link instagram" aria-hidden="true" focusable="false"
                   data-prefix="fab" data-icon="instagram"
                   class="svg-inline--fa fa-instagram fa-w-14" role="img"
@@ -86,7 +91,7 @@
                   </path>
                 </svg>
               </a>
-              <a href="" class="link">
+              <a href="" class="link" target="_blank">
                 <svg class="icon-link twitter" aria-hidden="true" focusable="false"
                   data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16"
                   role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -97,6 +102,7 @@
               </a>
             </div>
           </div>
+
           <div class="our-story-text">
             <h1>Our story</h1>
             <p>
@@ -118,6 +124,8 @@
     </main>
   </section>
 
+
+  <!-- Services -->
   <section class="services" id="services">
     <div class="service-card metal-card">
       <img src="/assets/card1.jpg" alt="">
@@ -142,11 +150,12 @@
     </div>
   </section>
 
-  <section class="customer-reviews" id="reviews">
 
+  <!-- Customers review -->
+  <section class="customer-reviews" id="reviews">
     <div class="swiper-container">
-      <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
+
         <!-- Slides -->
         <div class="swiper-slide">
           <div class="review">
@@ -205,7 +214,11 @@
     </div>
   </section>
 
+
+  <!-- Footer -->
   <section class="footer" id="contact">
+
+    <!-- Map -->
     <div class="mapouter">
       <h1>Address</h1>
       <p>Wola Zgłobieńska 94, 36-046, <br>
@@ -233,6 +246,7 @@
       </style>
     </div>
 
+    <!-- Contact information -->
     <div class="contact">
       <h1>Contact</h1>
       <h3>Jakub Kisala</h3>
@@ -254,7 +268,7 @@
       </div>
 
       <div class="instagram">
-        <a href="https://www.instagram.com/irontech2/?hl=en">
+        <a href="https://www.instagram.com/irontech2">
           <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
             class="svg-inline--fa fa-instagram fa-w-14" role="img"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -266,6 +280,7 @@
       </div>
     </div>
 
+    <!-- Contact form -->
     <div class="message">
       <h1>Message</h1>
       <form class="message-form" action="/auth/api" method="post">
@@ -282,6 +297,7 @@
       </form>
     </div>
 
+    <!-- Copyright footer -->
     <div class="copyright">
       <small>©
         <script>

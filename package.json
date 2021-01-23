@@ -10,7 +10,6 @@
   "author": "Goran Solev",
   "license": "MIT",
   "dependencies": {
-    "alert": "^5.0.10",
     "body-parser": "^1.19.0",
     "connect-ensure-login": "^0.1.1",
     "cors": "^2.8.5",

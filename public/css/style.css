@@ -647,7 +647,7 @@ input, select, textarea, button {
 
 input[type=text] {
   padding: .7em;
-  margin-bottom: .25em;
+  margin-bottom: -1.25em;
 }
 
 select {
@@ -656,8 +656,9 @@ select {
   background-repeat: no-repeat;
   background-position: 340px 10px;
   padding: .75em;
+  margin-top: 1em;
+  margin-bottom: -.25em;
   background-color: #369dfc;
-  margin: 1.5em 0;
   color: white;
   font-weight: 500;
   cursor: pointer;
@@ -671,7 +672,7 @@ select:hover {
 textarea {
   height: 100px;
   padding: .7em;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 
 button {

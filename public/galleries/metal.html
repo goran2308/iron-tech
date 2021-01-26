@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iron - Tech | Metal work</title>
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/355b890a2e.js" crossorigin="anonymous"></script>
+
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: 80vh;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .gallery-top {
+      height: 100%;
+      width: 100%;
+    }
+
+    .swiper-slide {
+      height: 100%;
+    }
+
+    .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 50px;
+      right: 100px;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+      font-size: 2.5em;
+      z-index: 5;
+      opacity: .75;
+    }
+
+    .close-btn:hover {
+      opacity: 1;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <a href="/" class="close-btn"><i class="far fa-times-circle"></i></a>
+
+  <!-- Swiper -->
+  <div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(./metal/clock.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/door.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/door1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/folding-table.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/folding-table1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/gym.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/gym1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/gym2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/gym3.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/gym4.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/gym5.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/milling.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/milling1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/milling2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/milling3.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/milling4.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/stairs.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/stairs1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/stairs2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/table.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/table1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/wall-unit.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(./metal/wall-unit1.jpg)"></div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var galleryTop = new Swiper('.gallery-top', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,35 +1,48 @@
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#2b5797">
-<meta name="theme-color" content="#ffffff">
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- <link rel="manifest" href="/application/favicons/site.webmanifest" crossorigin="use-credentials"> -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/login.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iron - Tech | Login</title>
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
 
-<div class="container">
-  <h1>
-    <%= company %>
-  </h1>
-  <h2>
-    <%= title %>
-  </h2>
+  <!-- <link rel="manifest" href="/application/favicons/site.webmanifest" crossorigin="use-credentials"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
 
-  <form action="/login" method="post">
-    <input type="text" name="username" placeholder="Username"> <br>
-    <input type="password" name="password" placeholder="Password" required> <br>
-
-    <button type="submit">Submit</button> <br>
-
-    <label id="error-message"></label>
-  </form>
-
-  <a href="/">Back home</a>
-</div>
+<body>
 
 
-<script src="/js/login.js"></script>
+  <div class="container">
+    <h1>
+      <%= company %>
+    </h1>
+    <h2>
+      <%= title %>
+    </h2>
+
+    <form action="/login" method="post">
+      <input type="text" name="username" placeholder="Username"> <br>
+      <input type="password" name="password" placeholder="Password" required> <br>
+
+      <button type="submit">Submit</button> <br>
+
+      <label id="error-message"></label>
+    </form>
+
+    <a href="/">Back home</a>
+  </div>
+
+  <script src="/js/login.js"></script>
+</body>
+
+</html>

@@ -205,6 +205,68 @@ main {
   color: white;
 }
 
+aside {
+  position: fixed;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 20;
+}
+
+aside ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15% 0;
+  height: 100%;
+  width: 50%;
+}
+
+aside a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Iceland", cursive;
+  font-size: 1.8em;
+}
+
+aside a:hover {
+  color: white;
+}
+
+aside i {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.8em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 7%;
+  margin-right: 7%;
+  cursor: pointer;
+}
+
+aside i:hover {
+  color: white;
+}
+
 .social-links-left {
   height: 100%;
   display: -webkit-box;

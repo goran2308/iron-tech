@@ -190,6 +190,21 @@ main {
   color: white;
 }
 
+.cog {
+  display: none;
+  cursor: pointer;
+}
+
+.cog i {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.8em;
+  padding: .5em;
+}
+
+.cog i:hover {
+  color: white;
+}
+
 .social-links-left {
   height: 100%;
   display: -webkit-box;
@@ -553,13 +568,12 @@ main {
   height: fit-content;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 6fr 1fr;
-      grid-template-rows: 6fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: "map contact message" "map contact message" "map contact message" "map contact message" "map contact message" "map contact message" "copy copy copy";
+      grid-template-areas: "map contact message" "copy copy copy";
   padding: 5em 8em 0 8em;
-  justify-items: center;
 }
 
 .footer a {
@@ -591,31 +605,36 @@ main {
   fill: #369dfc;
 }
 
-.mapouter, .contact, .message {
-  margin-bottom: 5em;
+.map {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: map;
 }
 
 .mapouter {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 6;
-  -ms-grid-column: 1;
-  grid-area: map;
+  position: relative;
+  height: 200px;
+  width: 350px;
 }
 
 .mapouter h1 {
   margin-bottom: 1em;
 }
 
+.gmap_canvas {
+  overflow: hidden;
+  height: 200px;
+  width: 350px;
+}
+
 .contact {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 6;
   -ms-grid-column: 2;
   grid-area: contact;
 }
 
 .message {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 6;
   -ms-grid-column: 3;
   grid-area: message;
 }
@@ -624,17 +643,13 @@ main {
   margin-bottom: 1em;
 }
 
-.copyright {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: copy;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  margin-bottom: 1em;
-}
-
-.message-form {
+.map, .contact, .message {
+  padding: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,7 +657,17 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 2em;
+}
+
+.copyright {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: copy;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-bottom: 1em;
+  margin-top: 5em;
 }
 
 input, select, textarea, button {
@@ -652,21 +677,20 @@ input, select, textarea, button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  width: 100%;
+  margin-bottom: 1em;
 }
 
 input[type=text] {
   padding: .7em;
-  margin-bottom: -1.25em;
 }
 
 select {
   background-image: url("../../assets/arrow-down.png");
   background-size: 20px;
   background-repeat: no-repeat;
-  background-position: 340px 10px;
+  background-position: 90%;
   padding: .75em;
-  margin-top: 1em;
-  margin-bottom: -.25em;
   background-color: #369dfc;
   color: white;
   font-weight: 500;
@@ -681,7 +705,6 @@ select:hover {
 textarea {
   height: 100px;
   padding: .7em;
-  margin-bottom: 2em;
 }
 
 button {
@@ -776,11 +799,12 @@ button:hover {
     height: 100px;
   }
   .footer {
-    -ms-grid-rows: 6fr 6fr 6fr 1fr !important;
-        grid-template-rows: 6fr 6fr 6fr 1fr !important;
+    -ms-grid-rows: 1fr 1fr 1fr auto !important;
+        grid-template-rows: 1fr 1fr 1fr auto !important;
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
         grid-template-areas: "map" "contact" "message" "copy";
+    grid-row-gap: 1em;
   }
   .mapouter, .contact, .message {
     display: -webkit-box;
@@ -796,18 +820,17 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-width: 100%;
+    min-width: 35%;
     min-height: 100%;
+    padding: 2em !important;
   }
   .mapouter, .contact, .message, .footer, .copyright {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
   }
   .copyright {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 3em;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -816,6 +839,8 @@ button:hover {
             align-items: center;
     min-width: 100%;
     padding: 2em 0;
+    margin-top: 5em !important;
+    margin-bottom: 2em !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

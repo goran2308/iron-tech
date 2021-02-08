@@ -1,11 +1,6 @@
 .landing-page
   width: 100%
   min-height: 100vh
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/background.png")
-  background-size: cover
-  background-position: 115% center
-  background-repeat: no-repeat
   background-color: black
 
 main
@@ -13,4 +8,6 @@ main
   flex-direction: column
 
 .content
-  height: calc(100vh - #{$nav-height-lg})
+  display: grid
+  grid-template-columns: 1fr 1fr
+  max-height: calc(100vh - #{$nav-height-lg})

@@ -2,9 +2,6 @@
   html
     font-size: 100%
 
-  .landing-page
-    background-position: 200px center
-
   .navbar
     height: $nav-height-md
     padding: 0 15%
@@ -19,18 +16,11 @@
   .our-story-container
     height: calc(100vh - #{$nav-height-md})
     min-width: 100%
-    grid-template-columns: 1fr 6fr
-
-  .our-story-text
-    width: 50%
+    grid-template-columns: 1fr 3fr
 
   .social-links-left
     margin-right: 0
     align-items: center
-
-  .services
-    padding: 10em 8.9em
-    column-gap: 3em
 
   .review
     img
@@ -39,24 +29,13 @@
 
 
 @media only screen and ( max-width: 85.375em) //1366px
-  html
-    font-size: 100%
-
-  .services
-    padding: 10em 7.6em
-    column-gap: 2.5em
-
   .footer
     padding: 5em 5em 0 5em
 
 
-@media only screen and ( max-width: 68.75em) //1100px
+@media only screen and ( max-width: 75em) //1200px
   html
     font-size: 85%
-
-  .services
-    padding: 8em 5.8em
-    column-gap: 2em
 
   .swiper-container
     width: 55%
@@ -92,3 +71,17 @@
     padding: 2em 0
     margin-top: 5em !important
     margin-bottom: 2em !important
+
+
+@media only screen and ( max-width: 62em) //992px
+  .navbar
+    padding: 5%
+
+  .navbar-logo
+    flex-grow: 0 !important
+
+  .navbar-links
+    flex-grow: 1
+    justify-content: flex-end
+    li
+      padd: 0 1.5em

@@ -244,7 +244,7 @@ aside a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
   font-family: "Iceland", cursive;
-  font-size: 1.8em;
+  font-size: 4em;
 }
 
 aside a:hover {
@@ -740,14 +740,16 @@ aside i:hover {
   margin-top: 5em;
 }
 
-input, select, textarea, button {
-  border: 2px solid #369dfc;
-  border-radius: 5px;
+input, textarea, button {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #369dfc;
   font-family: "Montserrat", sans-serif;
+  width: 100%;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: 100%;
   margin-bottom: 1em;
 }
 
@@ -765,11 +767,17 @@ select {
   color: white;
   font-weight: 500;
   cursor: pointer;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-bottom: 1em;
 }
 
 select:hover {
   background-color: #4fa9fc;
-  border: 2px solid #4fa9fc;
 }
 
 textarea {
@@ -792,6 +800,13 @@ button {
 button:hover {
   background-color: #4fa9fc;
   border: 2px solid #4fa9fc;
+}
+
+input:focus, textarea:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #369dfc;
 }
 
 @media only screen and (max-width: 90em) {
@@ -909,6 +924,61 @@ button:hover {
   }
   .navbar-links li {
     padd: 0 1.5em;
+  }
+  .services {
+    padding: 7% 10%;
+  }
+  .swiper-container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .navbar-links {
+    display: none !important;
+  }
+  .cog {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .content {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .background {
+    height: 60vh;
+  }
+  .our-story-container {
+    height: 40vh;
+  }
+  .our-story-text {
+    min-height: auto;
+  }
+  .services {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7% 20%;
+  }
+  .service-card {
+    margin-bottom: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */

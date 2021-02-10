@@ -1,9 +1,11 @@
-input, select, textarea, button
-  border: 2px solid $main-blue
-  border-radius: 5px
+input, textarea, button
+  border-top: none
+  border-left: none
+  border-right: none
+  border-bottom: 1px solid $main-blue
   font-family: $main-font
-  appearance: none
   width: 100%
+  appearance: none
   margin-bottom: 1em
 
 input[type=text]
@@ -19,9 +21,13 @@ select
   color: white
   font-weight: 500
   cursor: pointer
+  border: none
+  font-family: $main-font
+  width: 100%
+  appearance: none
+  margin-bottom: 1em
   &:hover
     background-color: lighten($main-blue, 5%)
-    border: 2px solid lighten($main-blue, 5%)
 
 textarea
   height: 100px
@@ -38,3 +44,10 @@ button
   &:hover
     background-color: lighten($main-blue, 5%)
     border: 2px solid lighten($main-blue, 5%)
+
+input, textarea
+  &:focus
+    border-top: none
+    border-left: none
+    border-right: none
+    border-bottom: 2px solid $main-blue

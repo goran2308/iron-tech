@@ -1,6 +1,6 @@
 .landing-page
   width: 100%
-  min-height: 100vh
+  height: fit-content
   background-color: black
 
 main
@@ -8,6 +8,7 @@ main
   flex-direction: column
 
 .content
+  width: 100%
   display: grid
   grid-template-columns: 1fr 1fr
-  max-height: calc(100vh - #{$nav-height-lg})
+  max-height: calc(100%- #{$nav-height-lg})

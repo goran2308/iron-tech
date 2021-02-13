@@ -99,9 +99,7 @@ small, .text_small {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  text-decoration: none;
 }
 
 .navbar .navbar-logo .logo {
@@ -143,6 +141,12 @@ small, .text_small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .navbar .navbar-links ul {
@@ -636,7 +640,7 @@ aside i:hover {
   -ms-grid-columns: (minmax(186px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
       grid-template-areas: "map contact message" "copy copy copy";
-  padding: 7% 15%;
+  padding: 7% 10%;
   padding-bottom: 5%;
 }
 
@@ -691,7 +695,7 @@ aside i:hover {
   text-decoration: underline;
 }
 
-.messenger {
+.phone, .messenger, .instagram {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -807,7 +811,7 @@ input:focus, textarea:focus {
 
 @media only screen and (max-width: 90em) {
   html {
-    font-size: 100%;
+    font-size: 90%;
   }
   .navbar {
     height: 6em;
@@ -956,7 +960,7 @@ input:focus, textarea:focus {
         grid-template-columns: 100%;
   }
   .content .our-story-container {
-    height: 50vh !important;
+    height: 100% !important;
   }
   .content .our-story-container .our-story-text {
     height: 100%;
@@ -1006,6 +1010,20 @@ input:focus, textarea:focus {
   }
   .copyright {
     margin-bottom: none !important;
+  }
+}
+
+@media only screen and (max-width: 23em) {
+  html {
+    font-size: 60%;
+  }
+  .content {
+    -ms-grid-rows: 40% 60% !important;
+        grid-template-rows: 40% 60% !important;
+  }
+  #gmap_canvas {
+    height: 150px;
+    width: 263px;
   }
 }
 /*# sourceMappingURL=style.css.map */

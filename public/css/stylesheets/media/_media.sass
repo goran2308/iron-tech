@@ -1,6 +1,6 @@
 @media only screen and ( max-width: 90em) //1440px
   html
-    font-size: 100%
+    font-size: 90%
 
   .navbar
     height: $nav-height-md
@@ -108,7 +108,7 @@
     grid-template-rows: 1fr 1fr !important
     grid-template-columns: 100%
     .our-story-container
-      height: 50vh !important
+      height: 100% !important
       .our-story-text
         height: 100%
         padding-right: 15%
@@ -148,3 +148,15 @@
 
   .copyright
     margin-bottom: none !important
+
+
+@media only screen and (max-width: 23em) //368px
+  html
+    font-size: 60%
+
+  .content
+    grid-template-rows: 40% 60% !important
+ 
+  #gmap_canvas
+    height: 150px
+    width: 263px

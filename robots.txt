@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Allow: /sitemap.htm
+Sitemap: http://iron-tech.herokuapp.com/sitemap.xml

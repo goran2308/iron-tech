@@ -917,7 +917,7 @@ input:focus, textarea:focus {
             justify-content: flex-end;
   }
   .navbar-links li {
-    padd: 0 1.5em;
+    paddind: 0 1.5em;
   }
   .services {
     padding: 7% 10%;
@@ -1009,7 +1009,7 @@ input:focus, textarea:focus {
     width: 350px;
   }
   .copyright {
-    margin-bottom: none !important;
+    margin-bottom: 0 !important;
   }
 }
 

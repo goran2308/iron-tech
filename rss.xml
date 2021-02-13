@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<rss version="2.0">
+  <channel>
+    <title>Our story</title>
+    <link>http://iron-tech.herokuapp.com</link>
+    <description />
+    <item>
+      <guid>http://iron-tech.herokuapp.com</guid>
+      <title>Our story</title>
+      <link>http://iron-tech.herokuapp.com</link>
+      <description>If you are looking for a company that makes metal and wooden custom products look no further.
+    From our family to yours.</description>
+      <pubDate>Sat, 13 Feb 2021 09:38:00 Z</pubDate>
+    </item>
+    <item>
+      <guid>http://iron-tech.herokuapp.com/galleries/metal.html</guid>
+      <title>Iron - Tech | Metal work</title>
+      <link>http://iron-tech.herokuapp.com/galleries/metal.html</link>
+      <description />
+      <pubDate>Sat, 13 Feb 2021 09:38:00 Z</pubDate>
+    </item>
+    <item>
+      <guid>http://iron-tech.herokuapp.com/</guid>
+      <title>Our story</title>
+      <link>http://iron-tech.herokuapp.com/</link>
+      <description>If you are looking for a company that makes metal and wooden custom products look no further.
+    From our family to yours.</description>
+      <pubDate>Sat, 13 Feb 2021 09:38:00 Z</pubDate>
+    </item>
+  </channel>
+</rss>
+<!--<guid value="540e61d1-35e9-4b10-b30f-20af749a9dfc" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->

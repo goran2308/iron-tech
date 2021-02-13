@@ -986,5 +986,9 @@ input:focus, textarea:focus {
   html {
     font-size: 75%;
   }
+  #gmap_canvas {
+    height: 200px;
+    width: 350px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

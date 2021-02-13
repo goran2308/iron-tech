@@ -1018,8 +1018,8 @@ input:focus, textarea:focus {
     font-size: 60%;
   }
   .content {
-    -ms-grid-rows: 40% 60% !important;
-        grid-template-rows: 40% 60% !important;
+    -ms-grid-rows: 35% 65% !important;
+        grid-template-rows: 35% 65% !important;
   }
   #gmap_canvas {
     height: 150px;

@@ -799,7 +799,6 @@ button {
 
 button:hover {
   background-color: #4fa9fc;
-  border: 2px solid #4fa9fc;
 }
 
 input:focus, textarea:focus {

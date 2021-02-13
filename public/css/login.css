@@ -34,6 +34,9 @@ a {
   background-color: #369dfc;
   color: white;
   padding: 5px 15px;
-  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #4fa9fc;
 }
 /*# sourceMappingURL=login.css.map */

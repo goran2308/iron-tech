@@ -58,7 +58,21 @@
   </div>
 
 
-  <script src="/js/clock.js"></script>
+  <script>
+
+    // Add clock to the admin page
+    const timeDisplay = document.getElementById("time");
+
+    function refreshTime() {
+      let dateString = new Date().toLocaleString("en-GB", {
+        timeZone: "UTC"
+      });
+      let formattedString = dateString.replace(", ", " - ");
+      timeDisplay.innerHTML = formattedString;
+    }
+
+    setInterval(refreshTime, 1000);
+  </script>
 </body>
 
 </html>

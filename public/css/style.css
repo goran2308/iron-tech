@@ -341,7 +341,7 @@ aside i:hover {
 
 .content .our-story-container .our-story-text {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   color: rgba(255, 255, 255, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,7 +809,7 @@ input:focus, textarea:focus {
   }
   .content .our-story-container {
     height: calc(100vh - 6em);
-    min-width: 100%;
+    width: 100%;
     -ms-grid-columns: 1fr 3fr;
         grid-template-columns: 1fr 3fr;
   }
@@ -858,8 +858,8 @@ input:focus, textarea:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-width: 35%;
-    min-height: 100%;
+    width: 35%;
+    height: 100%;
     padding: 2em !important;
   }
   .mapouter, .contact, .message, .footer, .copyright {
@@ -940,25 +940,24 @@ input:focus, textarea:focus {
             justify-content: flex-end;
   }
   .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    height: 100vh;
+    -ms-grid-rows: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
   }
-  .background {
-    height: 60vh;
+  .content .our-story-container {
+    height: 50vh !important;
   }
-  .our-story-container {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .our-story-text {
-    min-height: auto;
+  .content .our-story-container .our-story-text {
+    height: 100%;
     padding-right: 15%;
+  }
+  .content .background {
+    height: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
   .services {
     display: -webkit-box !important;
@@ -975,6 +974,9 @@ input:focus, textarea:focus {
   }
   .swiper-container {
     width: 85%;
+  }
+  .mapouter, .contact, .message {
+    width: 100%;
   }
   #gmap_canvas {
     height: 250px;

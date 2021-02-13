@@ -13,7 +13,7 @@
     height: calc(100vh - #{$nav-height-md})
     .our-story-container
       height: calc(100vh - #{$nav-height-md})
-      min-width: 100%
+      width: 100%
       grid-template-columns: 1fr 3fr
       .social-links-left
         margin-right: 0
@@ -47,8 +47,8 @@
     flex-direction: column
     justify-content: center
     align-items: center
-    min-width: 35%
-    min-height: 100%
+    width: 35%
+    height: 100%
     padding: 2em !important
 
   .mapouter, .contact, .message, .footer, .copyright
@@ -107,18 +107,17 @@
     justify-content: flex-end
 
   .content
-    display: flex
-    flex-direction: column-reverse
-
-  .background
-    height: 60vh
-
-  .our-story-container
-    height: fit-content
-
-  .our-story-text
-    min-height: auto
-    padding-right: 15%
+    height: 100vh
+    grid-template-rows: 1fr 1fr !important
+    grid-template-columns: 100%
+    .our-story-container
+      height: 50vh !important
+      .our-story-text
+        height: 100%
+        padding-right: 15%
+    .background
+      height: 100%
+      order: -1
 
   .services
     display: flex !important
@@ -130,6 +129,9 @@
 
   .swiper-container
     width: 85%
+
+  .mapouter, .contact, .message
+    width: 100%
 
   #gmap_canvas
     height: 250px

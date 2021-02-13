@@ -8,7 +8,7 @@
   let direction = 0;
   let prevDirection = 0;
 
-  let header = document.getElementById('navbar');
+  let header = document.querySelector('.navbar');
 
   const checkScroll = function () {
     curScroll = w.scrollY || doc.scrollTop;

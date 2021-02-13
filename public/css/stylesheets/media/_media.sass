@@ -5,22 +5,19 @@
   .navbar
     height: $nav-height-md
     padding: 0 15%
-
-  .logo
-    width: 4em !important
-    height: 4em !important
+    .logo
+      width: 4em !important
+      height: 4em !important
 
   .content
     height: calc(100vh - #{$nav-height-md})
-
-  .our-story-container
-    height: calc(100vh - #{$nav-height-md})
-    min-width: 100%
-    grid-template-columns: 1fr 3fr
-
-  .social-links-left
-    margin-right: 0
-    align-items: center
+    .our-story-container
+      height: calc(100vh - #{$nav-height-md})
+      min-width: 100%
+      grid-template-columns: 1fr 3fr
+      .social-links-left
+        margin-right: 0
+        align-items: center
 
   .review
     img
@@ -28,26 +25,20 @@
       height: 130px
 
 
-@media only screen and ( max-width: 85.375em) //1366px
-  .footer
-    padding: 5em 5em 0 5em
-
-
 @media only screen and ( max-width: 75em) //1200px
   html
     font-size: 85%
 
   .swiper-container
-    width: 55%
-
-  .review
-    img
-      width: 100px
-      height: 100px
+    width: 65%
+    .review
+      img
+        width: 100px
+        height: 100px
 
   .footer
-    grid-template-rows: 1fr 1fr 1fr auto !important
-    grid-template-columns: 1fr !important
+    grid-template-rows: 1fr 1fr 1fr
+    grid-template-columns: 100%
     grid-template-areas: "map" "contact" "message" "copy"
     grid-row-gap: 1em
 
@@ -62,6 +53,10 @@
 
   .mapouter, .contact, .message, .footer, .copyright
     margin: 0 !important
+
+  #gmap_canvas
+    height: 350px
+    width: 613px
 
   .copyright
     display: flex
@@ -92,13 +87,16 @@
   .swiper-container
     width: 70%
 
+  #gmap_canvas
+    height: 300px
+    width: 525px
 
 @media only screen and ( max-width: 48em) //768px
   html
-    font-size: 65%
+    font-size: 75%
 
   .navabar
-    width: auto
+    width: 100% !important
 
   .navbar-links
     display: none !important
@@ -109,7 +107,6 @@
     justify-content: flex-end
 
   .content
-    min-height: 100vh
     display: flex
     flex-direction: column-reverse
 
@@ -117,7 +114,7 @@
     height: 60vh
 
   .our-story-container
-    height: 40vh
+    height: fit-content
 
   .our-story-text
     min-height: auto
@@ -134,7 +131,11 @@
   .swiper-container
     width: 85%
 
-  .gmap_canvas 
-    overflow: hidden
-    height: 200px
-    width: 250px
+  #gmap_canvas
+    height: 250px
+    width: 438px
+
+
+@media only screen and (max-width: 36em) //576px
+  html
+    font-size: 75%

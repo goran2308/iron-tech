@@ -2,10 +2,11 @@
   width: 100%
   height: fit-content
   display: grid
-  grid-template-rows: auto auto
-  grid-template-columns: 1fr 1fr 1fr
+  grid-template-rows: 90% 10%
+  grid-template-columns: repeat(auto-fit, minmax(186px, 1fr))
   grid-template-areas: "map contact message" "copy copy copy" 
   padding: 7% 15%
+  padding-bottom: 5%
   a
     display: flex
     align-items: center
@@ -25,14 +26,7 @@
 .map
   grid-area: map
 
-.mapouter
-  position: relative
-  height: 200px
-  width: 350px
-  h1
-    margin-bottom: 1em
-
-.gmap_canvas 
+#gmap_canvas 
   overflow: hidden
   height: 200px
   width: 350px
@@ -56,3 +50,4 @@
 .copyright
   grid-area: copy
   justify-self: center
+  padding-top: 5%

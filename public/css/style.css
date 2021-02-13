@@ -534,7 +534,7 @@ aside i:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 45%;
+  width: 65%;
   padding: 2em 0;
 }
 
@@ -687,6 +687,19 @@ aside i:hover {
   grid-area: contact;
 }
 
+.contact a {
+  text-decoration: underline;
+}
+
+.messenger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .message {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
@@ -829,10 +842,7 @@ input:focus, textarea:focus {
   html {
     font-size: 85%;
   }
-  .swiper-container {
-    width: 65%;
-  }
-  .swiper-container .review img {
+  .review img {
     width: 100px;
     height: 100px;
   }
@@ -858,7 +868,6 @@ input:focus, textarea:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 35%;
     height: 100%;
     padding: 2em !important;
   }
@@ -882,7 +891,7 @@ input:focus, textarea:focus {
     min-width: 100%;
     padding: 2em 0;
     margin-top: 5em !important;
-    margin-bottom: 2em !important;
+    margin-bottom: 2em;
   }
 }
 
@@ -988,9 +997,15 @@ input:focus, textarea:focus {
   html {
     font-size: 75%;
   }
+  .services {
+    padding: 7% 7%;
+  }
   #gmap_canvas {
     height: 200px;
     width: 350px;
+  }
+  .copyright {
+    margin-bottom: none !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

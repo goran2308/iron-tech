@@ -29,12 +29,10 @@
   html
     font-size: 85%
 
-  .swiper-container
-    width: 65%
-    .review
-      img
-        width: 100px
-        height: 100px
+  .review
+    img
+      width: 100px
+      height: 100px
 
   .footer
     grid-template-rows: 1fr 1fr 1fr
@@ -47,7 +45,6 @@
     flex-direction: column
     justify-content: center
     align-items: center
-    width: 35%
     height: 100%
     padding: 2em !important
 
@@ -65,7 +62,7 @@
     min-width: 100%
     padding: 2em 0
     margin-top: 5em !important
-    margin-bottom: 2em !important
+    margin-bottom: 2em
 
 
 @media only screen and ( max-width: 62em) //992px
@@ -141,7 +138,13 @@
 @media only screen and (max-width: 36em) //576px
   html
     font-size: 75%
+
+  .services
+    padding: 7% 7%
   
   #gmap_canvas
     height: 200px
     width: 350px
+
+  .copyright
+    margin-bottom: none !important

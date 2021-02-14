@@ -595,7 +595,7 @@ aside i:hover {
   width: 80%;
 }
 
-.review img {
+.review .img1, .review .img2, .review .img3 {
   width: 150px;
   height: 150px;
   border-radius: 50%;

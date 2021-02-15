@@ -11,10 +11,12 @@
 
   .content
     height: calc(100vh - #{$nav-height-md})
+
     .our-story-container
       height: calc(100vh - #{$nav-height-md})
       width: 100%
       grid-template-columns: 1fr 3fr
+
       .social-links-left
         margin-right: 0
         align-items: center
@@ -107,11 +109,31 @@
     height: 100vh
     grid-template-rows: 1fr 1fr !important
     grid-template-columns: 100%
+
     .our-story-container
       height: 100% !important
+      grid-template-columns: 1fr
+      grid-template-rows: 4fr 1fr
+      
+
+      .social-links-left
+        width: 100%
+        order: 2
+
+        .line
+          display: none
+          border: 1px solid red
+
+        .icon-links
+          flex-direction: row
+
+          .icon-link
+            transform: none !important
+
       .our-story-text
         height: 100%
-        padding-right: 15%
+        padding: 0 15%
+
     .background
       height: 100%
       order: -1

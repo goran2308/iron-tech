@@ -14,31 +14,37 @@
   align-items: center
   background-color: $nav-bg-color
   z-index: 10
-  transition: all .3s ease;
+  transition: all .3s ease
+  
   .navbar-logo
     display: flex
     flex-direction: row
     text-decoration: none
+
     .logo
       width: 5em
       height: 5em
       background: url("/assets/logo.png")
       background-repeat: no-repeat
       background-size: cover
+
     .text
       display: flex
       flex-direction: column
       justify-content: center
       color: $white-alpha-7
       margin-left: 1em
+
       .company-name
         text-transform: uppercase
         font-family: $logo-font
         font-size: 1.5em
+
       .company-owner
         margin-top: -0.7em
         font-family: $nav-font
         font-size: 1.25em
+
   .navbar-links
     display: flex
     flex-grow: 1
@@ -55,6 +61,7 @@
       font-family: $nav-font
       &:hover
         color: $white
+
   .cog
     display: none //toggle flex
     cursor: pointer
@@ -126,34 +133,42 @@ aside
       align-items: flex-end
       justify-content: center
       margin-right: 34%
+
       .line
         border: 1px solid rgba(255, 255, 255, 0.3)
         height: 200px
         margin-top: 1em
+
       .icon-links
         padding: 1.1em 0
         display: flex
         flex-direction: column-reverse
         align-items: center
+
         .link
           &:hover
+
             .icon-link
               path
                 fill: rgba(255, 255, 255, 0.7)
+
         .icon-link
           width: 1.4em
           transform: rotate(-90deg)
           padding: .1em 0
           path
             fill: rgba(255, 255, 255, 0.3)
+
         .instagram
           width: 3.8em
           height: 3.8em
           padding: .6em 0
+
         .twitter
           width: 3.2em
           height: 3.2em
           padding: .6em 0
+
         .facebook
           width: 3.5em
           height: 2.2em

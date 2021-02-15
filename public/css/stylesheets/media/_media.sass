@@ -39,7 +39,7 @@
   .footer
     grid-template-rows: 1fr 1fr 1fr
     grid-template-columns: 100%
-    grid-template-areas: "map" "contact" "message" "copy"
+    grid-template-areas: "map" "contact" "message" "slinks" "copy"
     grid-row-gap: 1em
 
   .mapouter, .contact, .message
@@ -63,7 +63,7 @@
     align-items: center
     min-width: 100%
     padding: 2em 0
-    margin-top: 5em !important
+    margin-top: 0em !important
     margin-bottom: 2em
 
 
@@ -115,6 +115,7 @@
       grid-template-columns: 100%
       
       .social-links-left
+        display: none
         order: 2
 
         .line
@@ -159,6 +160,20 @@
     height: 250px
     width: 438px
 
+  .footer-social-links-left
+    display: flex
+    grid-area: slinks
+    align-items: center
+    justify-content: center
+    margin-top: 6em
+
+    .icon-links
+      display: flex
+      flex-direction: row
+
+      .icon-link
+        width: 2em
+        margin: 0 1em
 
 @media only screen and (max-width: 36em) //576px
   html

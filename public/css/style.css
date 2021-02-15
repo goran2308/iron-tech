@@ -258,7 +258,7 @@ aside i:hover {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  max-height: calc(100%- 7em);
+  height: calc(100%- 7em);
 }
 
 .content .our-story-container {
@@ -727,6 +727,10 @@ aside i:hover {
           flex-direction: column;
 }
 
+.footer-social-links-left {
+  display: none;
+}
+
 .copyright {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -851,7 +855,7 @@ input:focus, textarea:focus {
         grid-template-rows: 1fr 1fr 1fr;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-        grid-template-areas: "map" "contact" "message" "copy";
+        grid-template-areas: "map" "contact" "message" "slinks" "copy";
     grid-row-gap: 1em;
   }
   .mapouter, .contact, .message {
@@ -890,7 +894,7 @@ input:focus, textarea:focus {
             align-items: center;
     min-width: 100%;
     padding: 2em 0;
-    margin-top: 5em !important;
+    margin-top: 0em !important;
     margin-bottom: 2em;
   }
 }
@@ -961,6 +965,7 @@ input:focus, textarea:focus {
         grid-template-columns: 100%;
   }
   .content .our-story-container .social-links-left {
+    display: none;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -1019,6 +1024,32 @@ input:focus, textarea:focus {
   #gmap_canvas {
     height: 250px;
     width: 438px;
+  }
+  .footer-social-links-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-area: slinks;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 6em;
+  }
+  .footer-social-links-left .icon-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer-social-links-left .icon-links .icon-link {
+    width: 2em;
+    margin: 0 1em;
   }
 }
 

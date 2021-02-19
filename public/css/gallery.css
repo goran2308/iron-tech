@@ -13,7 +13,7 @@
 /* Typography weight */
 /* Colors */
 body {
-  background-color: black;
+  background-color: black !important;
 }
 
 .gallery-container {

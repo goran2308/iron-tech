@@ -1051,6 +1051,9 @@ input:focus, textarea:focus {
     width: 2em;
     margin: 0 1em;
   }
+  .gallery-container {
+    padding: 10% 10%;
+  }
 }
 
 @media only screen and (max-width: 36em) {
@@ -1066,6 +1069,9 @@ input:focus, textarea:focus {
   }
   .copyright {
     margin-bottom: 0 !important;
+  }
+  .gallery-container {
+    padding: 10% 5%;
   }
 }
 

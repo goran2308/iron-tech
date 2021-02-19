@@ -1,0 +1,24 @@
+@import "../css/stylesheets/partials/_reset"
+@import "../css/stylesheets/modules/_variables"
+
+body
+  background-color: $black
+  
+.gallery-container
+  // height: 100vh
+  width: 100%
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(186px, 1fr))
+  // grid-template-rows: masonry
+  gap: 1.5em
+  justify-content: center
+  align-content: center
+  padding: 10% 20%
+  
+  .gallery-img 
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.lb-dataContainer
+  font-family: $main-font

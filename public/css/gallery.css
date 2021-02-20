@@ -16,6 +16,22 @@ body {
   background-color: black !important;
 }
 
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .gallery-container {
   width: 100%;
   display: -ms-grid;
@@ -40,5 +56,14 @@ body {
 
 .lb-dataContainer {
   font-family: "Montserrat", sans-serif;
+}
+
+.gallery-btn {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 2em;
+  right: 4em;
+  -ms-flex-item-align: end !important;
+      align-self: flex-end !important;
 }
 /*# sourceMappingURL=gallery.css.map */
